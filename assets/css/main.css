@@ -1,0 +1,111 @@
+/*!
+ * main.css
+ * @project Escape From The World
+ * @author Thiago Braga <thibraga06@gmail.com>
+ * @link www.escapefromtheworld.com
+ */
+
+/* TYPOGRAPHY
+========================================================= */
+body,
+input,
+label,
+textarea {
+	font-family: Calibri, Arial, sans-serif;
+	text-shadow: 1px 1px 2px #000
+}
+
+/* LAYOUT
+========================================================= */
+body {
+	background: #000 url('../img/bg.jpg') center center repeat fixed;
+	color: #F0F0F0;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+	color: #F0F0F0;
+	text-decoration: none;
+	-webkit-transition: color ease-in-out .2s;
+	-moz-transition: color ease-in-out .2s;
+	-o-transition: color ease-in-out .2s;
+	transition: color ease-in-out .2s
+}
+
+a:hover {
+	color: #ABABAB;
+	text-decoration: none;
+	text-shadow: -1px -1px 2px #000
+}
+
+.center {
+	display: block;
+	margin: 0 auto
+}
+
+.brand {
+	background: url('../img/logo.png') no-repeat center center;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -59.5px;
+	margin-left: -175px;
+	width: 350px;
+	height: 119px;
+}
+
+/* FOOTER
+========================================================= */
+footer {
+	bottom: 0;
+	position: fixed;
+	text-align: center;
+	width: 100%
+}
+
+/* COMPONENTS
+========================================================= */
+.navbar-inner {
+	min-height: 30px
+}
+
+/* SPRITES
+========================================================= */
+.sprites {
+	background: url(../img/icons/sprites.png) center center no-repeat;
+	display: inline-block;
+	margin: -10px 4px;
+	width: 50px;
+	height: 50px;
+}
+
+.sprites.facebook {
+	background-position: 0 0
+}
+
+.sprites.email {
+	background-position: -51px 0
+}
+
+.sprites.myspace {
+	background-position: 0 -51px
+}
+
+.sprites.soundcloud {
+	background-position: -102px -51px
+}
+
+.sprites.twitter {
+	background-position: -51px -51px
+}
+
+.sprites.youtube {
+	background-position: -102px 0
+}
+
+.sprites:hover {
+	opacity: .5
+}
