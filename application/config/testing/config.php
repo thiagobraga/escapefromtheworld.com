@@ -237,7 +237,7 @@ $config['encryption_key'] = '00df0f98f2c9e1648845b2ac157728c0';
  * 'sess_time_to_update' = how many seconds between CI refreshing Session Information
  *
  */
-$config['sess_cookie_name'] = 'ci_session_' . PROJECT;
+$config['sess_cookie_name'] = 'escapefromtheworld';
 $config['sess_expiration'] = 7200;
 $config['sess_expire_on_close'] = FALSE;
 $config['sess_encrypt_cookie'] = FALSE;
