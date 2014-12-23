@@ -6,7 +6,7 @@
  *
  * @package		CodeIgniter
  * @author		ExpressionEngine Dev Team
- * @copyright	Copyright (c) 2008 - 2011, EllisLab, Inc.
+ * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc.
  * @license		http://codeigniter.com/user_guide/license.html
  * @link		http://codeigniter.com
  * @since		Version 1.0
@@ -383,9 +383,9 @@ class CI_Email {
 		$this->_body = rtrim(str_replace("\r", "", $body));
 
 		/* strip slashes only if magic quotes is ON
-			 if we do it with magic quotes OFF, it strips real, user-inputted chars.
+		   if we do it with magic quotes OFF, it strips real, user-inputted chars.
 
-			 NOTE: In PHP 5.4 get_magic_quotes_gpc() will always return 0 and
+		   NOTE: In PHP 5.4 get_magic_quotes_gpc() will always return 0 and
 			 it will probably not exist in future versions at all.
 		*/
 		if ( ! is_php('5.4') && get_magic_quotes_gpc())
@@ -1032,7 +1032,7 @@ class CI_Email {
 
 				if ($this->_get_protocol() == 'mail')
 				{
-					$this->_header_str .= $hdr;
+					$this->_header_str .= rtrim($hdr);
 					$this->_finalbody = $this->_body;
 				}
 				else
@@ -1070,7 +1070,7 @@ class CI_Email {
 
 				if ($this->_get_protocol() == 'mail')
 				{
-					$this->_header_str .= $hdr;
+					$this->_header_str .= rtrim($hdr);
 				}
 				else
 				{
@@ -1092,7 +1092,7 @@ class CI_Email {
 
 				if ($this->_get_protocol() == 'mail')
 				{
-					$this->_header_str .= $hdr;
+					$this->_header_str .= rtrim($hdr);
 				}
 
 				$body .= $this->_get_mime_message() . $this->newline . $this->newline;
@@ -1110,7 +1110,7 @@ class CI_Email {
 
 				if ($this->_get_protocol() == 'mail')
 				{
-					$this->_header_str .= $hdr;
+					$this->_header_str .= rtrim($hdr);
 				}
 
 				$body .= $this->_get_mime_message() . $this->newline . $this->newline;

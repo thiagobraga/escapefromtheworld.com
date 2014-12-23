@@ -2,11 +2,11 @@
 /**
  * CodeIgniter
  *
- * An open source application development framework for PHP 4.3.2 or newer
+ * An open source application development framework for PHP 5.1.6 or newer
  *
  * @package		CodeIgniter
  * @author		ExpressionEngine Dev Team
- * @copyright	Copyright (c) 2006 - 2012 EllisLab, Inc.
+ * @copyright	Copyright (c) 2006 - 2014 EllisLab, Inc.
  * @license		http://codeigniter.com/user_guide/license.html
  * @link		http://codeigniter.com
  * @since		Version 2.0
@@ -208,9 +208,7 @@ class CI_Cache extends CI_Driver_Library {
 		return $obj;
 	}
 
-	// ------------------------------------------------------------------------
 }
-// End Class
 
 /* End of file Cache.php */
 /* Location: ./system/libraries/Cache/Cache.php */

@@ -6,7 +6,7 @@
  *
  * @package		CodeIgniter
  * @author		ExpressionEngine Dev Team
- * @copyright	Copyright (c) 2008 - 2011, EllisLab, Inc.
+ * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc.
  * @license		http://codeigniter.com/user_guide/license.html
  * @link		http://codeigniter.com
  * @since		Version 1.0
@@ -106,8 +106,8 @@ if ( ! function_exists('create_captcha'))
 		// Do we have a "word" yet?
 		// -----------------------------------
 
-		 if ($word == '')
-		 {
+	   if ($word == '')
+	   {
 			$pool = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
 			$str = '';
@@ -117,7 +117,7 @@ if ( ! function_exists('create_captcha'))
 			}
 
 			$word = $str;
-		 }
+	   }
 
 		// -----------------------------------
 		// Determine angle and position
