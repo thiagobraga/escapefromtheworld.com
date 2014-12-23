@@ -6,7 +6,7 @@
  *
  * @package		CodeIgniter
  * @author		Esen Sagynov
- * @copyright	Copyright (c) 2008 - 2011, EllisLab, Inc.
+ * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc.
  * @license		http://codeigniter.com/user_guide/license.html
  * @link		http://codeigniter.com
  * @since		Version 2.0.2
@@ -389,7 +389,7 @@ class CI_DB_cubrid_driver extends CI_DB {
 		{
 			return 0;
 		}
-
+		
 		$query = $this->query($this->_count_string . $this->_protect_identifiers('numrows') . " FROM " . $this->_protect_identifiers($table, TRUE, NULL, FALSE));
 
 		if ($query->num_rows() == 0)

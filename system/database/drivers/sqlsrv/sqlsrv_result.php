@@ -6,7 +6,7 @@
  *
  * @package		CodeIgniter
  * @author		ExpressionEngine Dev Team
- * @copyright	Copyright (c) 2008 - 2011, EllisLab, Inc.
+ * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc.
  * @license		http://codeigniter.com/user_guide/license.html
  * @link		http://codeigniter.com
  * @since		Version 1.0
@@ -67,7 +67,7 @@ class CI_DB_sqlsrv_result extends CI_DB_result {
 		{
 			$field_names[] = $field['Name'];
 		}
-
+		
 		return $field_names;
 	}
 
@@ -92,10 +92,10 @@ class CI_DB_sqlsrv_result extends CI_DB_result {
 			$F->max_length	= $field['Size'];
 			$F->primary_key = 0;
 			$F->default		= '';
-
+			
 			$retval[] = $F;
 		}
-
+		
 		return $retval;
 	}
 

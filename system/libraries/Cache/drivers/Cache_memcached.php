@@ -2,11 +2,11 @@
 /**
  * CodeIgniter
  *
- * An open source application development framework for PHP 4.3.2 or newer
+ * An open source application development framework for PHP 5.1.6 or newer
  *
  * @package		CodeIgniter
  * @author		ExpressionEngine Dev Team
- * @copyright	Copyright (c) 2006 - 2012 EllisLab, Inc.
+ * @copyright	Copyright (c) 2006 - 2014 EllisLab, Inc.
  * @license		http://codeigniter.com/user_guide/license.html
  * @link		http://codeigniter.com
  * @since		Version 2.0
@@ -175,12 +175,12 @@ class CI_Cache_memcached extends CI_Driver {
 			{
 				$cache_server['port'] = $this->_default_options['default_port'];
 			}
-
+	
 			if ( ! array_key_exists('weight', $cache_server))
 			{
 				$cache_server['weight'] = $this->_default_options['default_weight'];
 			}
-
+	
 			$this->_memcached->addServer(
 					$cache_server['hostname'], $cache_server['port'], $cache_server['weight']
 			);
@@ -201,7 +201,6 @@ class CI_Cache_memcached extends CI_Driver {
 		if ( ! extension_loaded('memcached'))
 		{
 			log_message('error', 'The Memcached Extension must be loaded to use Memcached Cache.');
-
 			return FALSE;
 		}
 
@@ -209,10 +208,7 @@ class CI_Cache_memcached extends CI_Driver {
 		return TRUE;
 	}
 
-	// ------------------------------------------------------------------------
-
 }
-// End Class
 
 /* End of file Cache_memcached.php */
 /* Location: ./system/libraries/Cache/drivers/Cache_memcached.php */

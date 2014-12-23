@@ -6,7 +6,7 @@
  *
  * @package		CodeIgniter
  * @author		ExpressionEngine Dev Team
- * @copyright	Copyright (c) 2008 - 2011, EllisLab, Inc.
+ * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc.
  * @license		http://codeigniter.com/user_guide/license.html
  * @link		http://codeigniter.com
  * @since		Version 1.0
@@ -480,11 +480,11 @@ if ( ! function_exists('url_title'))
 	{
 		if ($separator == 'dash')
 		{
-				$separator = '-';
+		    $separator = '-';
 		}
 		else if ($separator == 'underscore')
 		{
-				$separator = '_';
+		    $separator = '_';
 		}
 
 		$q_separator = preg_quote($separator);
@@ -535,6 +535,13 @@ if ( ! function_exists('redirect'))
 			$uri = site_url($uri);
 		}
 
+        // Registering redirection action
+        $CI =& get_instance();
+        $subject = $CI->session->userdata('ainc_id_usuario');
+        $object  = $CI->logs_model->registerRedirection(base_url(uri_string()), $uri);
+        $CI->logs_model->registerAction($subject, 'redirect', $object, 'PageRedirections');
+
+        // Redirecting
 		switch($method)
 		{
 			case 'refresh'	: header("Refresh:0;url=".$uri);

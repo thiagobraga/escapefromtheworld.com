@@ -8,17 +8,17 @@
  */
 class Styleguide extends MY_Controller {
 
-	/**
-	 * Carrega a página inicial do site
-	 * @version 1.0
-	 */
-	public function index() {
-		$this->data->page = 'Style Guide';
-		$this->data->content = 'styleguide';
-		$this->data->css = array('mods/styleguide');
-		$this->data->js = array('mods/styleguide');
-		$this->load->view('base', $this->data);
-	}
+    /**
+     * Carrega a página inicial do site
+     * @version 1.0
+     */
+    public function index() {
+        $this->data->page = 'Style Guide';
+        $this->data->content = 'styleguide';
+        $this->data->css = array('mods/styleguide');
+        $this->data->js = array('mods/styleguide');
+        $this->load->view('base', $this->data);
+    }
 
 }
 
