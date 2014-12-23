@@ -1,0 +1,112 @@
+# Created by http://gitignore.io
+
+### Windows ###
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+### Linux ###
+.*
+!.gitignore
+!.git*
+*~
+
+
+### SublimeText ###
+# SublimeText project files
+*.sublime-workspace
+
+### CodeIgniter ###
+*/config/database.php
+*/config/development/database.php
+*/config/production/database.php
+*/config/testing/database.php
+*/logs/log-*.php
+!*/logs/.htaccess
+!*/logs/index.html
+*/cache/*
+!*/cache/.htaccess
+!*/cache/index.html
+
+
+### Node ###
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results
+
+npm-debug.log
+node_modules
+
+### Bower ###
+assets/bower/
+bower/
+bower_components/
+
+
+### Jekyll ###
+_site/
+
+### NetBeans ###
+nbproject/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+build.xml
+build.properties
+
+
+### Dreamweaver ###
+_notes
+*_notes/
+dwsync.xml
+
+
+### Scripts ###
+scripts/deploy.sh
+scripts/deploy.production.sh
+scripts/deploy.testing.sh
+
+
+### Barpedia ###
+application/controllers/teste.php
+assets/images/bares/*
+assets/images/ofertas/*
+assets/images/tmp/*
+assets/images/bares_tmp/*
+
+# Não versionar arquivo minificado
+# Utilizar o grunt para compilar
+assets/css/dist/
+assets/js/dist/
