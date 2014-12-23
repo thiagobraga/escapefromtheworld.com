@@ -40,8 +40,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * in the URL cannot be matched to a valid route.
  *
  */
-$route['default_controller'] = "home";
-$route['404_override'] = '';
+$route['default_controller'] = 'home';
+$route['404_override']       = '';
 
 
 /* End of file routes.php */

@@ -15,16 +15,7 @@
  * If this is not set then CodeIgniter will guess the protocol, domain and
  * path to your installation.
  */
-switch (ENVIRONMENT) {
-    case 'production':
-        $config['base_url'] = 'http://escapefromtheworld.com/';
-        break;
-    case 'development':
-        $config['base_url'] = 'http://local.escapefromtheworld.com/';
-        break;
-    default:
-        exit('The application environment is not set correctly.');
-}
+$config['base_url'] = 'http://testing.escapefromtheworld.com';
 
 /**
  * -----------------------------------------------------------------------------
