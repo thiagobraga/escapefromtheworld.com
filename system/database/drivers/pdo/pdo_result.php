@@ -5,7 +5,7 @@
  * An open source application development framework for PHP 5.1.6 or newer
  *
  * @package		CodeIgniter
- * @copyright	Copyright (c) 2008 - 2011, EllisLab, Inc.
+ * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc.
  * @license		http://codeigniter.com/user_guide/license.html
  * @author		EllisLab Dev Team
  * @link		http://codeigniter.com
@@ -94,14 +94,14 @@ class CI_DB_pdo_result extends CI_DB_result {
 	function field_data()
 	{
 		$data = array();
-
+	
 		try
 		{
 			for($i = 0; $i < $this->num_fields(); $i++)
 			{
 				$data[] = $this->result_id->getColumnMeta($i);
 			}
-
+			
 			return $data;
 		}
 		catch (Exception $e)
@@ -172,7 +172,7 @@ class CI_DB_pdo_result extends CI_DB_result {
 	 * @return	object
 	 */
 	function _fetch_object()
-	{
+	{	
 		return $this->result_id->fetchObject();
 	}
 

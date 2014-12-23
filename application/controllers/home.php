@@ -2,18 +2,18 @@
 
 class Home extends MY_Controller
 {
-	/**
-	 * Carrega a página inicial do site
-	 */
-	public function index()
-	{
-		$this->data->page = 'Página Inicial';
-		$this->data->content = 'home/home';
-		$this->data->css = array('mods/home');
-		$this->data->js = array('mods/home');
+    /**
+     * Carrega a página inicial do site
+     */
+    public function index()
+    {
+        $this->data->page = 'Página Inicial';
+        $this->data->content = 'home/home';
+        $this->data->css = array('mods/home');
+        $this->data->js = array('mods/home');
 
-		$this->load->view('base', $this->data);
-	}
+        $this->load->view('base', $this->data);
+    }
 }
 
 /* End of file home.php */

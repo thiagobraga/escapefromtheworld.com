@@ -2,17 +2,6 @@
 
 /**
  * -----------------------------------------------------------------------------
- * PROJECT
- * -----------------------------------------------------------------------------
- *
- * Define the project name to use in configuration files
- * and the base_url used for different environments
- *
- */
-define('PROJECT', 'escapefromtheworld');
-
-/**
- * -----------------------------------------------------------------------------
  * APPLICATION ENVIRONMENT
  * -----------------------------------------------------------------------------
  *
@@ -29,15 +18,15 @@ define('PROJECT', 'escapefromtheworld');
  * NOTE: If you change these, also change the error_reporting() code below
  *
  */
-switch ($_SERVER['HTTP_HOST']) {
-    case PROJECT:
-        define('ENVIRONMENT', 'production');
-        break;
-    case 'test.' . PROJECT:
-        define('ENVIRONMENT', 'testing');
-        break;
-    default:
-        define('ENVIRONMENT', 'development');
+switch ($_SERVER['SERVER_NAME']) {
+case 'escapefromtheworld.com':
+    define('ENVIRONMENT', 'production');
+break;
+case 'testing.escapefromtheworld.com':
+    define('ENVIRONMENT', 'testing');
+break;
+default:
+    define('ENVIRONMENT', 'development');
 }
 
 /**
@@ -50,17 +39,15 @@ switch ($_SERVER['HTTP_HOST']) {
  */
 if (defined('ENVIRONMENT')) {
     switch (ENVIRONMENT) {
-        case 'production':
-            error_reporting(E_ALL);
-            break;
-        case 'testing':
-            error_reporting(0);
-            break;
-        case 'development':
-            error_reporting(E_ALL);
-            break;
-        default:
-            exit('The application environment is not set correctly.');
+    case 'production':
+    case 'testing':
+        error_reporting(0);
+    break;
+    case 'development':
+        error_reporting(E_ALL);
+    break;
+    default:
+        exit('The application environment is not set correctly.');
     }
 }
 

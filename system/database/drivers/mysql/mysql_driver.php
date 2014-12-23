@@ -6,7 +6,7 @@
  *
  * @package		CodeIgniter
  * @author		ExpressionEngine Dev Team
- * @copyright	Copyright (c) 2008 - 2011, EllisLab, Inc.
+ * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc.
  * @license		http://codeigniter.com/user_guide/license.html
  * @link		http://codeigniter.com
  * @since		Version 1.0
@@ -56,7 +56,7 @@ class CI_DB_mysql_driver extends CI_DB {
 
 	// whether SET NAMES must be used to set the character set
 	var $use_set_names;
-
+	
 	/**
 	 * Non-persistent database connection
 	 *
@@ -303,12 +303,12 @@ class CI_DB_mysql_driver extends CI_DB {
 		if (is_array($str))
 		{
 			foreach ($str as $key => $val)
-				{
+	   		{
 				$str[$key] = $this->escape_str($val, $like);
-				}
+	   		}
 
-				return $str;
-			}
+	   		return $str;
+	   	}
 
 		if (function_exists('mysql_real_escape_string') AND is_resource($this->conn_id))
 		{

@@ -6,7 +6,7 @@
  *
  * @package		CodeIgniter
  * @author		Esen Sagynov
- * @copyright	Copyright (c) 2008 - 2011, EllisLab, Inc.
+ * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc.
  * @license		http://codeigniter.com/user_guide/license.html
  * @link		http://codeigniter.com
  * @since		Version 1.0
@@ -187,7 +187,7 @@ class CI_DB_cubrid_forge extends CI_DB_forge {
 		{
 			$key_name = "pk_" . $table . "_" .
 				$this->db->_protect_identifiers(implode('_', $primary_keys));
-
+			
 			$primary_keys = $this->db->_protect_identifiers($primary_keys);
 			$sql .= ",\n\tCONSTRAINT " . $key_name . " PRIMARY KEY(" . implode(', ', $primary_keys) . ")";
 		}
@@ -206,7 +206,7 @@ class CI_DB_cubrid_forge extends CI_DB_forge {
 					$key_name = $this->db->_protect_identifiers($key);
 					$key = array($key_name);
 				}
-
+				
 				$sql .= ",\n\tKEY \"{$key_name}\" (" . implode(', ', $key) . ")";
 			}
 		}

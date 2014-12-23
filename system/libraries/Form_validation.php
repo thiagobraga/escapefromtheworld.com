@@ -6,7 +6,7 @@
  *
  * @package		CodeIgniter
  * @author		ExpressionEngine Dev Team
- * @copyright	Copyright (c) 2008 - 2011, EllisLab, Inc.
+ * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc.
  * @license		http://codeigniter.com/user_guide/license.html
  * @link		http://codeigniter.com
  * @since		Version 1.0
@@ -937,7 +937,7 @@ class CI_Form_validation {
 
 		return ($str !== $field) ? FALSE : TRUE;
 	}
-
+	
 	// --------------------------------------------------------------------
 
 	/**
@@ -952,9 +952,9 @@ class CI_Form_validation {
 	{
 		list($table, $field)=explode('.', $field);
 		$query = $this->CI->db->limit(1)->get_where($table, array($field => $str));
-
+		
 		return $query->num_rows() === 0;
-		}
+    }
 
 	// --------------------------------------------------------------------
 
