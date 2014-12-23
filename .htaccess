@@ -810,5 +810,7 @@ RewriteRule ^assets\/(js|css)\/dist\/(.+)\.([0-9]+)(\.min|)\.(js|css)$ assets/$1
 </IfModule>
 
 # Enabling HTTP_IF_MODIFIED_SINCE and HTTP_IF_NONE_MATCH for caching
-RewriteRule .* - [E=HTTP_IF_MODIFIED_SINCE:%{HTTP:If-Modified-Since}]
-RewriteRule .* - [E=HTTP_IF_NONE_MATCH:%{HTTP:If-None-Match}]
+# RewriteRule .* - [E=HTTP_IF_MODIFIED_SINCE:%{HTTP:If-Modified-Since}]
+# RewriteRule .* - [E=HTTP_IF_NONE_MATCH:%{HTTP:If-None-Match}]
+
+php_flag opcache.enable Off
