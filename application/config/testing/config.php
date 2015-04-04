@@ -15,7 +15,7 @@
  * If this is not set then CodeIgniter will guess the protocol, domain and
  * path to your installation.
  */
-$config['base_url'] = 'http://testing.escapefromtheworld.com';
+$config['base_url'] = 'http://test.escapefromtheworld.com';
 
 /**
  * -----------------------------------------------------------------------------
