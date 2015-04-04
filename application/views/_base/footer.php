@@ -12,5 +12,8 @@
 		<a href="<?php echo base_url() ?>">
 			<h4>escapefromtheworld.com</h4>
 		</a>
+
+        <!-- Google Plus -->
+        <a href="https://plus.google.com/105385251547448438110" rel="publisher"></a>
 	</div>
 </footer>
