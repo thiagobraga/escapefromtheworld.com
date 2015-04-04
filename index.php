@@ -22,7 +22,7 @@ switch ($_SERVER['SERVER_NAME']) {
 case 'escapefromtheworld.com':
     define('ENVIRONMENT', 'production');
 break;
-case 'testing.escapefromtheworld.com':
+case 'test.escapefromtheworld.com':
     define('ENVIRONMENT', 'testing');
 break;
 default:
