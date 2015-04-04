@@ -342,6 +342,23 @@ $config['rewrite_short_tags'] = FALSE;
  */
 $config['proxy_ips'] = '';
 
+/**
+ * Autoload classes in application core folder.
+ *
+ * @access   private
+ * @param    {String}  $class  The class to autoload.
+ * @return   {void}
+ */
+function __autoload($class)
+{
+    if (
+        strpos($class, 'CI_') !== 0
+        && strpos($class, 'MY_') !== 0
+    ) {
+        include_once(APPPATH . 'core/' . $class . EXT);
+    }
+}
+
 
 /** End of file config.php */
 /** Location: ./application/config/config.php */
