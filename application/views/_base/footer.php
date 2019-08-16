@@ -5,15 +5,12 @@
 		<a href="//myspace.com/escape.from.the.world" class="sprites myspace"></a>
 		<a href="//twitter.com/verseshope" class="sprites twitter"></a>
 		<a href="//youtube.com/verseshope" class="sprites youtube"></a>
-		<a href="mailto:marcel@escapefromtheworld.com" class="sprites email"></a>
+		<a href="mailto:contato@escapefromtheworld.com" class="sprites email"></a>
 	</div>
 
 	<div class="row-fluid">
 		<a href="<?php echo base_url() ?>">
 			<h4>escapefromtheworld.com</h4>
 		</a>
-
-        <!-- Google Plus -->
-        <a href="https://plus.google.com/105385251547448438110" rel="publisher"></a>
 	</div>
 </footer>

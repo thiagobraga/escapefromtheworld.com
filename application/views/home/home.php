@@ -1,2 +1,2 @@
 <!-- BRAND -->
-<a href="//www.escapefromtheworld.com" class="brand"></a>
+<a href="https://escapefromtheworld.com" class="brand"></a>

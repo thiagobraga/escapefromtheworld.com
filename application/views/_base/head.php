@@ -2,7 +2,7 @@
 	<!-- SEO -->
 	<meta charset="utf-8" />
 	<meta name="author" content="Thiago Braga" />
-	<meta name="reply-to" content="thibraga06@gmail.com" />
+	<meta name="reply-to" content="contato@thiagobraga.org" />
 	<meta name="robots" content="index, follow" />
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width" />
 	<meta http-equiv="X-UA-Compatible" content="chrome=1" />
@@ -28,18 +28,18 @@
 	<![endif]-->
 
 	<!-- CSS -->
-	<?php if (ENVIRONMENT == 'production') : ?>
-		<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap.min.css" rel="stylesheet" />
-	<?php else : ?>
+	<?php if (ENVIRONMENT == 'production') { ?>
+		<link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap.min.css" rel="stylesheet" />
+	<?php } else { ?>
 		<link href="<?php echo base_url('assets/bootstrap/css/bootstrap.css') ?>" rel="stylesheet" />
-	<?php endif; ?>
+	<?php } ?>
 
 	<link href="<?php echo base_url('assets/css/plugins/mediaelementplayer.css') ?>" rel="stylesheet" />
 	<link href="<?php echo base_url('assets/css/main.css') ?>" rel="stylesheet" />
 
-	<?php if (!empty($css)) : ?>
-		<?php foreach ($css as $file) : ?>
+	<?php if (!empty($css)) { ?>
+		<?php foreach ($css as $file) { ?>
 			<link href="<?php echo base_url("assets/css/$file.css") ?>" rel="stylesheet" />
-		<?php endforeach; ?>
-	<?php endif; ?>
+		<?php } ?>
+	<?php } ?>
 </head>

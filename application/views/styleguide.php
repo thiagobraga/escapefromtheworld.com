@@ -271,9 +271,9 @@
       <div class="panel-heading">Images
       </div>
       <div class="panel-body">
-      <p><img src="http://placehold.it/100x100" class="img-rounded">
-        <img src="http://placehold.it/100x100" class="img-circle">
-        <img src="http://placehold.it/100x100" class="img-thumbnail"></p>
+      <p><img src="https://placehold.it/100x100" class="img-rounded">
+        <img src="https://placehold.it/100x100" class="img-circle">
+        <img src="https://placehold.it/100x100" class="img-thumbnail"></p>
       </div>
     </div>
   </div>
